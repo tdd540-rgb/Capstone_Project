@@ -1,0 +1,56 @@
+{
+  "task": "Binary Whole-Tumour Segmentation",
+  "modality": "BraTS 2023 T2-FLAIR",
+  "whole_tumour_definition": "All non-background BraTS segmentation labels (seg > 0)",
+  "full_volume_shape": [
+    208,
+    224,
+    160
+  ],
+  "downstream_training_shape": [
+    104,
+    112,
+    80
+  ],
+  "segmentor": {
+    "architecture": "Custom 3D U-Net",
+    "training_subjects": 800,
+    "validation_subjects": 100,
+    "threshold": 0.5,
+    "best_checkpoint": "/users/tdd540/Capstone_Project/downstream_checkpoints/whole_tumour_segmentor_best.pt"
+  },
+  "quality_predictor": {
+    "architecture": "Compact 3D ResNet Dice regressor",
+    "input": "Two channels: T2-FLAIR image and predicted/perturbed WT mask",
+    "training_subjects": 80,
+    "validation_subjects": 20,
+    "perturbations": [
+      "baseline",
+      "erode_1",
+      "erode_2",
+      "erode_3",
+      "dilate_1",
+      "dilate_2",
+      "dilate_3",
+      "shift_small",
+      "shift_large",
+      "cutout_small",
+      "cutout_large",
+      "add_blob",
+      "boundary_noise"
+    ],
+    "target": "True Dice against the real whole-tumour mask",
+    "best_checkpoint": "/users/tdd540/Capstone_Project/downstream_checkpoints/whole_tumour_quality_predictor_best.pt"
+  },
+  "main_downstream_metric": "Mean WT EvanySeg-style predicted Dice across 200 synthetic volumes",
+  "secondary_conditional_metric": "Dice between the fixed segmentor prediction and the generation condition mask; reported only for the two conditional generators.",
+  "evaluation_models": [
+    "ddpm_v5",
+    "conditional_ddpm_v3",
+    "conditional_ldm_v4"
+  ],
+  "synthetic_volumes_per_model": 200,
+  "training_evaluation_leakage": "None: all downstream training subsets come from data_split['train']; the fixed 200 synthetic evaluation conditions are excluded.",
+  "random_seed": 2026,
+  "rank_alignment_note": "Upstream/downstream Spearman correlations are descriptive because only three generative models are compared."
+}

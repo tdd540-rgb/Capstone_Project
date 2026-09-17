@@ -1,0 +1,38 @@
+{
+  "ddpm_v5": {
+    "model_display_name": "DDPM V5",
+    "n_volumes": 200,
+    "wt_evanyseg_mean": 0.7989599609375,
+    "wt_evanyseg_std": 0.06395321508480489,
+    "wt_evanyseg_median": 0.8095703125,
+    "wt_evanyseg_ci95_lower": 0.7899412841796875,
+    "wt_evanyseg_ci95_upper": 0.8076099853515625,
+    "condition_adherence_dice_mean": null,
+    "condition_adherence_dice_std": null,
+    "empty_prediction_percentage": 0.0
+  },
+  "conditional_ddpm_v3": {
+    "model_display_name": "Conditional DDPM V3",
+    "n_volumes": 200,
+    "wt_evanyseg_mean": 0.852431640625,
+    "wt_evanyseg_std": 0.040171973496162076,
+    "wt_evanyseg_median": 0.859619140625,
+    "wt_evanyseg_ci95_lower": 0.8468041381835938,
+    "wt_evanyseg_ci95_upper": 0.8577662353515625,
+    "condition_adherence_dice_mean": 0.6841318523699236,
+    "condition_adherence_dice_std": 0.25394319312715086,
+    "empty_prediction_percentage": 0.0
+  },
+  "conditional_ldm_v4": {
+    "model_display_name": "Conditional LDM V4",
+    "n_volumes": 200,
+    "wt_evanyseg_mean": 0.86901123046875,
+    "wt_evanyseg_std": 0.04040260495969819,
+    "wt_evanyseg_median": 0.88037109375,
+    "wt_evanyseg_ci95_lower": 0.8633690795898438,
+    "wt_evanyseg_ci95_upper": 0.8744360961914063,
+    "condition_adherence_dice_mean": 0.6661715507524589,
+    "condition_adherence_dice_std": 0.24674205706582242,
+    "empty_prediction_percentage": 0.0
+  }
+}
