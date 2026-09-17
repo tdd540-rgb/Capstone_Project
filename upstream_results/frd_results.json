@@ -1,0 +1,32 @@
+{
+  "ddpm_v5": {
+    "FRD": 58.14404754021522,
+    "frd_version": "v1",
+    "norm_ref": "d1",
+    "num_workers": 1,
+    "real_volumes": 200,
+    "synthetic_volumes": 200,
+    "elapsed_seconds": 8702.576561739668,
+    "elapsed_hours": 2.417382378261019
+  },
+  "conditional_ddpm_v3": {
+    "FRD": 58.11269617810514,
+    "frd_version": "v1",
+    "norm_ref": "d1",
+    "num_workers": 1,
+    "real_volumes": 200,
+    "synthetic_volumes": 200,
+    "elapsed_seconds": 8469.757911843248,
+    "elapsed_hours": 2.3527105310675687
+  },
+  "conditional_ldm_v4": {
+    "FRD": 51.152709371010616,
+    "frd_version": "v1",
+    "norm_ref": "d1",
+    "num_workers": 1,
+    "real_volumes": 200,
+    "synthetic_volumes": 200,
+    "elapsed_seconds": 8152.182316943072,
+    "elapsed_hours": 2.2644950880397423
+  }
+}

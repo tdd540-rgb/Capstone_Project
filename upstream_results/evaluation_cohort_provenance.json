@@ -1,0 +1,11 @@
+{
+  "training_subjects": 1000,
+  "validation_subjects": 125,
+  "test_subjects": 126,
+  "heldout_pool_size": 251,
+  "selected_subjects": 200,
+  "selection_seed": 2026,
+  "sampling": "NumPy default_rng choice without replacement from the sorted validation-plus-test subject list",
+  "cohort_json": "/users/tdd540/Capstone_Project/evaluation_200/conditions/evaluation_subjects_200.json",
+  "selection_reproduced_successfully": true
+}

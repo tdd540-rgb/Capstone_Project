@@ -1,0 +1,20 @@
+{
+  "metric": "Fr\u00e9chet Radiomic Distance",
+  "version": "v1",
+  "reference": "Real 200 preprocessed BraTS 2023 T2-FLAIR volumes",
+  "synthetic_models": [
+    "ddpm_v5",
+    "conditional_ddpm_v3",
+    "conditional_ldm_v4"
+  ],
+  "volumes_per_distribution": 200,
+  "normalization_reference": "d1",
+  "cpu_workers": 1,
+  "execution_isolation": "one fresh Python subprocess per model",
+  "image_types": [
+    "Original",
+    "LoG",
+    "Wavelet"
+  ],
+  "force_recompute": false
+}

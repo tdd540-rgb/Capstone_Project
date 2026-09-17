@@ -1,0 +1,50 @@
+{
+  "dataset": "BraTS 2023 GLI",
+  "modality": "T2-FLAIR",
+  "volume_shape": [
+    208,
+    224,
+    160
+  ],
+  "evaluation_cohort_size": 200,
+  "cohort_source": "held-out validation and test subjects",
+  "cohort_json": "/users/tdd540/Capstone_Project/evaluation_200/conditions/evaluation_subjects_200.json",
+  "real_intensity_range": [
+    0.0,
+    1.0
+  ],
+  "slices_per_plane": 16,
+  "planes": [
+    "axial",
+    "coronal",
+    "sagittal"
+  ],
+  "metrics": {
+    "FID": "2D ImageNet InceptionV3 pooled features",
+    "KID": "2D ImageNet InceptionV3 pooled features",
+    "sFID": "first seven channels of InceptionV3 Mixed_6e features",
+    "PRDC": "standardised 3D MedicalNet ResNet50 features",
+    "FRD": "FRDv1 on complete 3D NIfTI volumes",
+    "RadFID": "2D RadImageNet InceptionV3 features",
+    "MedFID": "3D MedicalNet ResNet50 pooled features",
+    "Vendi": "RBF kernel over standardised MedicalNet features",
+    "AuthPct": "MedicalNet features compared with the 1000-subject generative training set",
+    "ASW": "random projections over standardised MedicalNet features"
+  },
+  "metric_direction": {
+    "FID": "lower",
+    "KID": "lower",
+    "sFID": "lower",
+    "Precision": "higher",
+    "Recall": "higher",
+    "Density": "higher",
+    "Coverage": "higher",
+    "FRD": "lower",
+    "RadFID": "lower",
+    "MedFID": "lower",
+    "Vendi": "higher, interpreted relative to real reference",
+    "AuthPct": "higher",
+    "ASW": "lower"
+  },
+  "random_seed": 2026
+}
