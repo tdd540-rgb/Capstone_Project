@@ -1,0 +1,14 @@
+metric,direction,spearman_rho,ranking_match,metric_ranking,downstream_ranking,note
+FID,lower,-0.5,False,conditional_ldm_v4 > ddpm_v5 > conditional_ddpm_v3,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+KID,lower,-0.5,False,conditional_ldm_v4 > ddpm_v5 > conditional_ddpm_v3,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+sFID,lower,-0.5,False,conditional_ldm_v4 > ddpm_v5 > conditional_ddpm_v3,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+Precision,higher,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+Recall,higher,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+Density,higher,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+Coverage,higher,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+FRD,lower,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+RadFID,lower,,False,ddpm_v5 > conditional_ddpm_v3 > conditional_ldm_v4,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+MedFID,lower,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+Vendi,higher,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+AuthPct,higher,-0.5,False,ddpm_v5 > conditional_ddpm_v3 > conditional_ldm_v4,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
+ASW,lower,0.5,False,conditional_ldm_v4 > conditional_ddpm_v3 > ddpm_v5,conditional_ddpm_v3 > conditional_ldm_v4 > ddpm_v5,Descriptive only: the correlation is based on three generative models.
